@@ -1,0 +1,44 @@
+Notes By Bharath Boyapati 
+React Developer 
+
+
+
+In the updated version of react-router dom we are not using the switch 
+and the switch is replaced by the Routes 
+
+The syntax is given below 
+
+This is how we are importing the BrowserRouter,Routes,Route
+
+This is the updated syntax 
+import {BrowserRouter,Route,Routes,} from "react-router-dom";
+
+The old way of writing is 
+import {BrowserRouter,Route,Switch,} from "react-router-dom";
+
+Just the switch is replaced by the Routes 
+
+
+In the updated verson of 6 we cant use the component the component is replaced by the elemenet
+an the synatx has been completly changed 
+
+The old way of writing is 
+
+<Route exact path="/" component={HomePage} />
+
+In the component we are directly rendering the HomePage Elememnt 
+
+But in the updated syntax we are going to use the element instaed of component
+
+<Route path="/" element={<HomePage/>} exact />
+
+And for the component we have to enclose with the Angular Braces 
+
+The syntax is as follows
+
+element={<HomePage/>} 
+
+
+If we are not enclosing with the anguar braces we will be getting an error like this 
+
+matched-leaf-route-at-location-does-not-have-an-element by default it will show the null page 
